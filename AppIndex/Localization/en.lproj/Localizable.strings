@@ -1,0 +1,103 @@
+/* 
+  Localizable.strings
+  AppIndex
+
+  Created by Serena on 27/03/2023.
+  
+*/
+
+"Applications" = "Applications";
+"All Applications" = "All Applications";
+
+/* Basic App info fields */
+"Name" = "Name";
+"Bundle Identifier" = "Bundle Identifier";
+"Download Date" = "Download Date";
+"Type" = "Type";
+
+/* Info stuff */
+"SDK Built with" = "SDK Built with";
+"Mininium System Version Required" = "Mininium iOS Version Required";
+"Application Version" = "Application Version";
+
+/* App types */
+"User" = "User";
+"System" = "System";
+
+/* App types (Header text) */
+"User Applications" = "User Applications";
+"System Applications" = "System Applications";
+"Unknown Application Type" = "Unknown Application Type";
+
+
+"No Genre" = "No Genre";
+
+"%d Applications" = "%d Applications"; /* number of applications, like '31 Applications' */
+
+/* Status info */
+"Deletable" = "Deletable"; /* Can the app be deleted? */
+"Containerized" = "Containerized"; /* Is the app containerized? */
+"Restricted" = "Restricted"; /* Is the app restricted? */
+"Beta App" = "Beta App"; /* Is the app a beta app? */
+"Supports iTunes File Sharing" = "Supports iTunes File Sharing"; /* Can the app share files to iTunes? */
+"Launch Prohibited" = "Launch Prohibited"; /* is launching the app prohibited? */
+"Came from App Store" = "Came from App Store"; /* did the app come from the app store? */
+"Has Settings Bundle" = "Has Settings Bundle";
+
+/* Paths */
+"Bundle Path" = "Bundle Path";
+"Container Path" = "Container Path";
+
+/* Size stuff */
+"Application (.app) Size" = "Application (.app) Size";
+"Documents & Data" = "Documents & Data";
+"Size in Group Containers" = "Size in Group Containers";
+
+/* Yes/No */
+"Yes" = "Yes";
+"No" = "No";
+
+"Cancel" = "Cancel";
+"Copy" = "Copy";
+"Date Installed" = "Date Installed";
+
+/* ApplicationInfoViewController sections */
+"General" = "General";
+"Status" = "Status";
+"Size" = "Size";
+"Paths" = "Paths";
+"Store Metadata" = "Store Metadata";
+"Advanced" = "Advanced";
+"Version" = "Version";
+"App Groups" = "App Groups";
+
+/* Open Actions */
+"Open in Santander" = "Open in Santander";
+"Open in Filza" = "Open in Filza";
+"Open" = "Open";
+
+/* Store Metadata stuff */
+"Vendor" = "Vendor"; /* ALSO USED FOR SORTING */
+"Genre" = "Genre"; /* ALSO USED FOR SORTING */
+"Age Rating" = "Age Rating";
+
+"Unknown Vendor" = "Unknown Vendor";
+
+/* Sorting stuff */
+"Sort By..." = "Sort By...";
+"Type" = "Type"; /* Sort by type of app */
+"None" = "None"; /* Don't sort */
+"Alphabetical Order" = "Alphabetical Order";
+
+"Icon" = "Icon";
+"File Extension(s)" = "File Extension(s)";
+
+"Can't backup app with a container URL of /var/mobile or /var/root (App likely has no container in the first place to back up), sorry" = "Can't backup app with a container URL of /var/mobile or /var/root (App likely has no container in the first place to back up), sorry";
+"If the Application Size shows up here as 'zero', this most likey means that the Application is a System one, and it may not be possible to measure accurately." = "If the Application Size shows up here as 'zero', this most likey means that the Application is a System one, and it may not be possible to measure accurately.";
+
+/* Advanced Info */
+"Exported Types" = "Exported Types";
+"Entitlements" = "Entitlements";
+"Transport Security Exceptions" = "Transport Security Exceptions";
+"Registered URL Schemes" = "Registered URL Schemes";
+"Usage Descriptions" = "Usage Descriptions";

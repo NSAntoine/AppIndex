@@ -1,0 +1,8 @@
+Package: com.serena.AppIndex
+Name: AppIndex
+Version: 1.0
+Architecture: iphoneos-arm
+Description: An Application to view and manage Applications.
+Section: Applications
+Maintainer: Serena
+Author: Serena

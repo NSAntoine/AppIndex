@@ -1,0 +1,3 @@
+module CustomLaunchServicesBridge {
+	header "LaunchServices/LaunchServices.h"
+}

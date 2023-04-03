@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "privatekits",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/SerenaKit/PrivateKits",
+      "state" : {
+        "branch" : "main",
+        "revision" : "23316a122ce4688bbbbc738a4aff64c4025b489a"
+      }
+    }
+  ],
+  "version" : 2
+}
