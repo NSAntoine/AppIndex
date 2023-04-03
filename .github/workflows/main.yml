@@ -1,0 +1,31 @@
+name: Build and Upload
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    name: Build
+    runs-on: macos-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Build
+        run: |
+          make
+          
+      - name: Upload TrollStore .tipa
+      - uses:  actions/upload-artifact@v3
+        with: 
+          name: AppIndexTrollstore.tipa
+          path: build/AppIndexTrollstore.tipa
+        
+      - name: Upload Jailbroken .deb
+      - uses:  actions/upload-artifact@v3
+        with: 
+          name: AppIndex.deb
+          path: build/AppIndex.deb
