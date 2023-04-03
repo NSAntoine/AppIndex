@@ -162,9 +162,12 @@ extension ApplicationInfoViewController {
 			
 			// we deleted, go back to the root vc
 			// and refresh apps
-			if let rootVC = navigationController?.popToRootViewController(animated: true) as? ApplicationListViewController {
+			navigationController?.popToRootViewController(animated: true)
+			if let rootVC = (navigationController?.topViewController as? ApplicationListViewController) {
+				print("rootVC")
 				Application.refreshAllApps()
 				rootVC.allItemsSnapshot = rootVC.makeSnapshot(for: rootVC.appCollections(withSortMode: rootVC.sortMode))
+				rootVC.dataSource.apply(rootVC.allItemsSnapshot)
 			}
 		} catch {
 			errorAlert(title: .localizedStringWithFormat(.localized("Failed to delete %@"), app.name),

@@ -36,7 +36,6 @@ class ApplicationListViewCell: UICollectionViewCell {
 		contentView.addSubview(iconImageView)
 		
 		nameLabel.translatesAutoresizingMaskIntoConstraints = false
-//		nameLabel.textAlignment = .center
 		nameLabel.font = .preferredFont(forTextStyle: .title3)
 		contentView.addSubview(nameLabel)
 		
@@ -54,6 +53,7 @@ class ApplicationListViewCell: UICollectionViewCell {
 			iconImageView.widthAnchor.constraint(equalTo: contentView.layoutMarginsGuide.heightAnchor),
 			
 			nameLabel.leadingAnchor.constraint(equalTo: iconImageView.trailingAnchor, constant: 7.384),
+			nameLabel.trailingAnchor.constraint(equalTo: contentView.layoutMarginsGuide.trailingAnchor),
 			nameLabel.centerYAnchor.constraint(equalTo: contentView.layoutMarginsGuide.centerYAnchor, constant: -10),
 			
 			subtitleLabel.leadingAnchor.constraint(equalTo: nameLabel.leadingAnchor),
