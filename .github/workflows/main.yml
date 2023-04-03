@@ -1,11 +1,20 @@
-name: Build and Upload
+name: CI
 
 on:
   push:
-    branches: [ "main" ]
+    branches:
+      - main
+    paths-ignore:
+      - '**/*.md'
+      - '.gitignore'
   pull_request:
-    branches: [ "main" ]
-
+    branches:
+      - main
+    paths-ignore:
+      - '**/*.md'
+      - '.gitignore'
+  workflow_dispatch:
+  
 jobs:
   build:
     name: Build
@@ -14,18 +23,27 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v3
-      - name: Build
-        run:
+        
+      - name: Install needed tools
+        run: |
+          brew install ldid dpkg
+          
+      - name: Select Xcode version (14.0)
+        run: |
+          sudo xcode-select --switch /Applications/Xcode_14.0.app
+          
+      - name: Build & Sign Application
+        run: |
           make
           
       - name: Upload TrollStore .tipa
-      - uses:  actions/upload-artifact@v3
-        with: 
+        uses: actions/upload-artifact@v3.1.0
+        with:
           name: AppIndexTrollstore.tipa
-          path: build/AppIndexTrollstore.tipa
-        
-      - name: Upload Jailbroken .deb
-      - uses:  actions/upload-artifact@v3
-        with: 
-          name: AppIndex.deb
-          path: build/AppIndex.deb
+          path: ${{ github.workspace }}/build/AppIndexTrollstore.tipa
+          
+      - name: Upload deb for Jailbroken devices
+        uses: actions/upload-artifact@v3.1.0
+        with:
+          name: AppIndex
+          path: ${{ github.workspace }}/build/AppIndex.deb
