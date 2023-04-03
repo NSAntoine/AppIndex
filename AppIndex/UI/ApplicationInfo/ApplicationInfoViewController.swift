@@ -40,6 +40,7 @@ class ApplicationInfoViewController: UIViewController {
 		tableView.backgroundColor = .systemGroupedBackground
 		tableView.translatesAutoresizingMaskIntoConstraints = false
 		tableView.dataSource = dataSource
+		dataSource.defaultRowAnimation = .fade
 		tableView.delegate = self
 		//tableView.register(UITableViewCell.self, forCellReuseIdentifier: "GeneralCell")
 		view.addSubview(tableView)
@@ -115,7 +116,10 @@ class ApplicationInfoViewController: UIViewController {
 			alert.addAction(action)
 		}
 		alert.addAction(backupAction)
-		alert.addAction(deleteAction)
+		if app.proxy.isDeletable {
+			alert.addAction(deleteAction)
+		}
+		
 		alert.addAction(UIAlertAction(title: .localized("Cancel"), style: .cancel))
 		present(alert, animated: true)
 	}
@@ -124,10 +128,6 @@ class ApplicationInfoViewController: UIViewController {
 		if #available(iOS 14, *) {
 			let exportAsIPAction = UIAction(title: .localized("Export as .ipa")) { [unowned self] _ in
 				app.exportAsIpa(senderViewController: self)
-			}
-			
-			let deleteAction = UIAction(title: .localized("Delete"), attributes: .destructive) { [unowned self] _ in
-				deleteApp()
 			}
 			
 			let backupAction = UIAction(title: .localized("Backup")) { [unowned self] _ in
@@ -140,13 +140,22 @@ class ApplicationInfoViewController: UIViewController {
 				}
 			}
 		
-			tableHeaderView.actionsButton.showsMenuAsPrimaryAction = true
-			tableHeaderView.actionsButton.menu = UIMenu(children: [
+			var children = [
 				UIMenu(options: .displayInline, children: [exportAsIPAction]),
 				UIMenu(options: .displayInline, children: [backupAction]),
-				UIMenu(options: .displayInline, children: restoreBackupsActions),
-				UIMenu(options: .displayInline, children: [deleteAction]),
-			])
+				UIMenu(options: .displayInline, children: restoreBackupsActions)
+			]
+			
+			if app.proxy.isDeletable {
+				let deleteAction = UIAction(title: .localized("Delete"), attributes: .destructive) { [unowned self] _ in
+					deleteApp()
+				}
+				
+				children.append(UIMenu(options: .displayInline, children: [deleteAction]))
+			}
+			
+			tableHeaderView.actionsButton.showsMenuAsPrimaryAction = true
+			tableHeaderView.actionsButton.menu = UIMenu(children: children)
 			
 		} else {
 			tableHeaderView.actionsButton.addTarget(self, action: #selector(openRightBarMenuActionSheet), for: .touchUpInside)

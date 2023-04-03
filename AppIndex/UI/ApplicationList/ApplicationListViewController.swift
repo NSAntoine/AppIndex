@@ -414,7 +414,7 @@ extension ApplicationListViewController: UICollectionViewDelegate {
 			}
 			
 			let copyImageAction = UIAction(title: .localized("Icon")) { _ in
-				UIPasteboard.general.image = app.iconImage(forFormat: 12)
+				UIPasteboard.general.image = app.iconImage(forFormat: 10)
 			}
 			
 			let copyMenu = UIMenu(title: .localized("Copy..."), children: [copyNameAction, copyBundleIDAction, copyImageAction])

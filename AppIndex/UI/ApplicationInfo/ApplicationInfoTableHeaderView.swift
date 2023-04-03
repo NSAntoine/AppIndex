@@ -25,8 +25,9 @@ class ApplicationInfoTableHeaderView: UIView {
 	}
 	
 	func setup() {
-		let iconImageView = UIImageView(image: app.iconImage(forFormat: 12))
+		let iconImageView = UIImageView(image: app.iconImage(forFormat: 10))
 		iconImageView.translatesAutoresizingMaskIntoConstraints = false
+		iconImageView.contentMode = .scaleAspectFit
 		addSubview(iconImageView)
 		
 		let nameLabel = UILabel()
@@ -56,17 +57,19 @@ class ApplicationInfoTableHeaderView: UIView {
 			actionsButton.widthAnchor.constraint(equalToConstant: 70),
 			
 			iconImageView.leadingAnchor.constraint(equalTo: layoutMarginsGuide.leadingAnchor, constant: 15),
-			iconImageView.topAnchor.constraint(equalTo: layoutMarginsGuide.topAnchor, constant: 10),
+			iconImageView.topAnchor.constraint(equalTo: layoutMarginsGuide.topAnchor),
 			iconImageView.widthAnchor.constraint(equalToConstant: iconImageView.image?.size.width ?? 0),
 			iconImageView.bottomAnchor.constraint(equalTo: layoutMarginsGuide.bottomAnchor),
 			
-			nameLabel.centerYAnchor.constraint(equalTo: iconImageView.layoutMarginsGuide.topAnchor, constant: 6.5),
+//			nameLabel.centerYAnchor.constraint(equalTo: iconImageView.layoutMarginsGuide.topAnchor, constant: 6.5),
 			nameLabel.leadingAnchor.constraint(equalTo: iconImageView.trailingAnchor, constant: 15),
 			nameLabel.trailingAnchor.constraint(equalTo: actionsButton.leadingAnchor),
+			nameLabel.topAnchor.constraint(equalTo: layoutMarginsGuide.topAnchor),
 			
 			bundleIDLabel.leadingAnchor.constraint(equalTo: nameLabel.leadingAnchor),
 			bundleIDLabel.trailingAnchor.constraint(equalTo: actionsButton.leadingAnchor),
 			bundleIDLabel.topAnchor.constraint(equalTo: nameLabel.bottomAnchor),
+			bundleIDLabel.bottomAnchor.constraint(equalTo: iconImageView.bottomAnchor)
 		])
 		
 	}

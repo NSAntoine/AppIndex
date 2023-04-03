@@ -20,7 +20,7 @@ class ApplicationContextMenuPreview: UIViewController {
 		super.viewDidLoad()
 		
 		view.backgroundColor = .systemGroupedBackground
-		let imageView = UIImageView(image: app.iconImage(forFormat: 4))
+		let imageView = UIImageView(image: app.iconImage(forFormat: 10))
 		imageView.translatesAutoresizingMaskIntoConstraints = false
 		view.addSubview(imageView)
 		
