@@ -92,23 +92,23 @@ enum SerializedItemType: Equatable, CustomStringConvertible {
     var typeDescription: String {
         switch self {
         case .string(_):
-            return "String"
+            return .localized("String")
         case .bool(_):
-            return "Boolean"
+            return .localized("Boolean")
         case .int(_):
-            return "Integer"
+            return .localized("Integer")
         case .float(_):
-            return "Float"
+            return .localized("Float")
         case .data(_):
-            return "Data"
+            return .localized("Data")
         case .array(_):
-            return "Array"
+            return .localized("Array")
         case .dictionary(_):
-            return "Dictionary"
+            return .localized("Dictionary")
         case .date(_):
-            return "Date"
+            return .localized("Date")
         case .other(_):
-            return "Unknown Type"
+            return .localized("Unknown Type")
         }
     }
     

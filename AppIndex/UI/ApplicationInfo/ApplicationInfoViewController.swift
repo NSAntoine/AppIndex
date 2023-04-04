@@ -345,7 +345,7 @@ extension ApplicationInfoViewController {
 		snapshot.appendItems([
 			CellItem(localizedPrimaryText: "Application Version", secondaryText: app.proxy.shortVersionString),
 			CellItem(localizedPrimaryText: "SDK Version Built with", secondaryText: app.proxy.sdkVersion),
-			CellItem(localizedPrimaryText: "Mininium iOS Version Required", secondaryText: app.proxy.minimumSystemVersion),
+			CellItem(localizedPrimaryText: "Minimum iOS Version Required", secondaryText: app.proxy.minimumSystemVersion),
 		], toSection: .versionInformation)
 		
 		let byteCountFormatter = ByteCountFormatter()
@@ -478,8 +478,8 @@ extension ApplicationInfoViewController {
 					for type in types {
 						snapshot.appendSections([type])
 						var items: [CellItem] = [
-							CellItem(localizedPrimaryText: "Identifier", secondaryText: type.identifier ?? "N/A"),
-							CellItem(localizedPrimaryText: "Description", secondaryText: type.description ?? "N/A")
+                            CellItem(localizedPrimaryText: "Identifier", secondaryText: type.identifier ?? .localized("N/A")),
+							CellItem(localizedPrimaryText: "Description", secondaryText: type.description ?? .localized("N/A"))
 						]
 						
 						if let conformingTypes = type.conformsTo {
@@ -487,7 +487,7 @@ extension ApplicationInfoViewController {
 							items.append(item)
 						}
 						
-						items.append(CellItem(localizedPrimaryText: "File Extension(s)", secondaryText: type.filenameExtensions?.joined(separator: ", ") ?? "N/A"))
+						items.append(CellItem(localizedPrimaryText: "File Extension(s)", secondaryText: type.filenameExtensions?.joined(separator: ", ") ?? .localized("N/A")))
 						snapshot.appendItems(items, toSection: type)
 					}
 					

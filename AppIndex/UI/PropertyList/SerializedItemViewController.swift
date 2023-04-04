@@ -60,7 +60,7 @@ class SerializedItemViewController: UITableViewController {
         case 1:
             switch item {
             case .bool(let bool):
-				cell.textLabel?.text = "Value"
+                cell.textLabel?.text = .localized("Value")
 				cell.detailTextLabel?.text = bool.description
 				return cell
             case .string(let string):
@@ -75,10 +75,10 @@ class SerializedItemViewController: UITableViewController {
                 cell.contentView.addSubview(textView)
                 return cell
 			case .int(let int):
-				cell.textLabel?.text = "Value"
+				cell.textLabel?.text = .localized("Value")
 				cell.detailTextLabel?.text = int.description
 			case .float(let float):
-				cell.textLabel?.text = "Value"
+				cell.textLabel?.text = .localized("Value")
 				cell.detailTextLabel?.text = float.description
             case .date(let date):
                 let datePicker = UIDatePicker()
@@ -87,11 +87,11 @@ class SerializedItemViewController: UITableViewController {
 				cell.accessoryView = datePicker
                 return cell
             default:
-				cell.textLabel?.text = "Vale"
+				cell.textLabel?.text = .localized("Value")
 				cell.detailTextLabel?.text = item.description
             }
         case 2:
-			cell.textLabel?.text = "Type"
+			cell.textLabel?.text = .localized("Type")
 			cell.detailTextLabel?.text = item.typeDescription
         default:
             fatalError()
@@ -103,11 +103,11 @@ class SerializedItemViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         switch section {
         case 0:
-            return "Key"
+            return .localized("Key")
         case 1:
-            return "Value"
+            return .localized("Value")
         case 2:
-            return "Type"
+            return .localized("Type")
         default:
             return nil
         }

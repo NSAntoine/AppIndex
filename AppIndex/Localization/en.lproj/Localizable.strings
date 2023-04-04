@@ -16,8 +16,8 @@
 "Type" = "Type";
 
 /* Info stuff */
-"SDK Built with" = "SDK Built with";
-"Mininium System Version Required" = "Mininium iOS Version Required";
+"SDK Version Built with" = "SDK Version Built with";
+"Minimum iOS Version Required" = "Minimum iOS Version Required";
 "Application Version" = "Application Version";
 
 /* App types */
@@ -71,6 +71,8 @@
 "Version" = "Version";
 "App Groups" = "App Groups";
 
+"N/A" = "N/A";
+
 /* Open Actions */
 "Open in Santander" = "Open in Santander";
 "Open in Filza" = "Open in Filza";
@@ -89,6 +91,8 @@
 "None" = "None"; /* Don't sort */
 "Alphabetical Order" = "Alphabetical Order";
 
+"Backups" = "Backups";
+
 "Icon" = "Icon";
 "File Extension(s)" = "File Extension(s)";
 
@@ -101,3 +105,24 @@
 "Transport Security Exceptions" = "Transport Security Exceptions";
 "Registered URL Schemes" = "Registered URL Schemes";
 "Usage Descriptions" = "Usage Descriptions";
+
+/* Actions */
+"Export as .ipa" = "Export as .ipa";
+"Backup" = "Backup";
+"Exporting..." = "Exporting...";
+
+/* Entitlements Info */
+"Key" = "Key";
+"Value" = "Value";
+// "Types" already localized at basic app info fields
+
+/* Types in plist */
+"String" = "String";
+"Boolean" = "Boolean";
+"Integer" = "Integer";
+"Float" = "Float";
+"Data" = "Data";
+"Array" = "Array";
+"Dictionary" = "Dictionary";
+"Date" = "Date";
+"Unknown Type" = "Unknown Type";
