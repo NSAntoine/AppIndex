@@ -1,0 +1,128 @@
+/* 
+  Localizable.strings
+  AppIndex
+
+  Created by Serena on 27/03/2023.
+  
+*/
+
+"Applications" = "アプリケーション";
+"All Applications" = "全てのアプリケーション";
+
+/* Basic App info fields */
+"Name" = "名前";
+"Bundle Identifier" = "バンドル識別名";
+"Download Date" = "ダウンロード日時";
+"Type" = "タイプ";
+
+/* Info stuff */
+"SDK Version Built with" = "使われたSDKのバージョン";
+"Minimum iOS Version Required" = "最小限のiOSバージョン";
+"Application Version" = "アプリケーションバージョン";
+
+/* App types */
+"User" = "ユーザ";
+"System" = "システム";
+
+/* App types (Header text) */
+"User Applications" = "ユーザアプリケーション";
+"System Applications" = "システムアプリケーション";
+"Unknown Application Type" = "不明なアプリケーションタイプ";
+
+
+"No Genre" = "ジャンル無し";
+
+"%d Applications" = "%dのアプリケーション"; /* number of applications, like '31 Applications' */
+
+/* Status info */
+"Deletable" = "削除可能"; /* Can the app be deleted? */
+"Containerized" = "コンテナあり"; /* Is the app containerized? */
+"Restricted" = "制限あり"; /* Is the app restricted? */
+"Beta App" = "ベータ版"; /* Is the app a beta app? */
+"Supports iTunes File Sharing" = "iTunesファイル共有対応"; /* Can the app share files to iTunes? */
+"Launch Prohibited" = "起動禁止"; /* is launching the app prohibited? */
+"Came from App Store" = "App Storeから"; /* did the app come from the app store? */
+"Has Settings Bundle" = "設定バンドルあり";
+
+"N/A" = "無し";
+
+/* Paths */
+"Bundle Path" = "バンドルパス";
+"Container Path" = "コンテナパス";
+
+/* Size stuff */
+"Application (.app) Size" = "アプリケーション（.app）サイズ";
+"Documents & Data" = "書類とデータのサイズ";
+"Size in Group Containers" = "グループコンテナ内サイズ";
+
+/* Yes/No */
+"Yes" = "はい";
+"No" = "いいえ";
+
+"Cancel" = "キャンセル";
+"Copy" = "コピー";
+"Date Installed" = "インストール日";
+
+/* ApplicationInfoViewController sections */
+"General" = "一般";
+"Status" = "状態";
+"Size" = "サイズ";
+"Paths" = "パス";
+"Store Metadata" = "App Storeメタデータ";
+"Advanced" = "詳細";
+"Version" = "バージョン";
+"App Groups" = "アプリグループ";
+
+/* Open Actions */
+"Open in Santander" = "Santanderで開く";
+"Open in Filza" = "Filzaで開く";
+"Open" = "開く";
+
+/* Store Metadata stuff */
+"Vendor" = "開発者"; /* ALSO USED FOR SORTING */
+"Genre" = "ジャンル"; /* ALSO USED FOR SORTING */
+"Age Rating" = "年齢制限指定";
+
+"Unknown Vendor" = "不明な開発者";
+
+/* Sorting stuff */
+"Sort By..." = "並び順...";
+"Type" = "タイプ"; /* Sort by type of app */
+"None" = "無し"; /* Don't sort */
+"Alphabetical Order" = "アルファベット順";
+
+"Backups" = "保存済みバックアップ";
+
+"Icon" = "アイコン";
+"File Extension(s)" = "ファイル拡張子";
+
+"Can't backup app with a container URL of /var/mobile or /var/root (App likely has no container in the first place to back up), sorry" = "コンテナURLが/var/mobileまたは/var/rootのアプリをバックアップすることはできません。アプリにはバック アップするためのコンテナがない可能性が高いです。";
+"If the Application Size shows up here as 'zero', this most likey means that the Application is a System one, and it may not be possible to measure accurately." = "アプリケーションのサイズが0の場合は、アプリケーションがシステムアプリである可能性が高く、正確な測定ができない可能性があります。";
+
+/* Advanced Info */
+"Exported Types" = "輸出されたタイプ";
+"Entitlements" = "エンタイトルメント";
+"Transport Security Exceptions" = "トランスポートセキュリティの例外";
+"Registered URL Schemes" = "登録済みURLスキーム";
+"Usage Descriptions" = "使用説明";
+
+/* Actions */
+"Export as .ipa" = "IPAファイルとしてエクスポート";
+"Backup" = "バックアップ";
+"Exporting..." = "エクスポート中...";
+
+/* Entitlements Info */
+"Key" = "キー";
+"Value" = "値";
+// "Types" already localized at basic app info fields
+
+/* Types in plist */
+"String" = "文字列";
+"Boolean" = "ブール";
+"Integer" = "数値";
+"Float" = "浮動小数点数";
+"Data" = "データ";
+"Array" = "配列";
+"Dictionary" = "辞書";
+"Date" = "日付";
+"Unknown Type" = "不明なタイプ";
