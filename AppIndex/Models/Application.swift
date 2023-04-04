@@ -12,11 +12,11 @@ import CompressionWrapper
 /// Represents a general application.
 public struct Application: Hashable {
 	public static func == (lhs: Application, rhs: Application) -> Bool {
-		return lhs.uuid == rhs.uuid
+		return lhs.bundleID == rhs.bundleID
 	}
 	
 	public func hash(into hasher: inout Hasher) {
-		hasher.combine(uuid)
+		hasher.combine(bundleID)
 	}
 	
 	public static var all = LSApplicationWorkspace.default().allApplications().map {
@@ -31,7 +31,6 @@ public struct Application: Hashable {
 	
 	public let name: String
 	public let bundleID: String
-    private let uuid = UUID()
 	
 	public var iconImage: UIImage? {
 		._applicationIconImage(forBundleIdentifier: proxy.applicationIdentifier(),
