@@ -17,7 +17,7 @@
 
 /* Info stuff */
 "SDK Version Built with" = "Versión del SDK";
-"Minimum iOS Version Required" = "Versión mínima de iOS";
+"Mininium iOS Version Required" = "Versión mínima de iOS";
 "Application Version" = "Versión de la aplicación";
 
 /* App types */
@@ -39,10 +39,10 @@
 "Containerized" = "Contenedor"; /* Is the app containerized? */
 "Restricted" = "Restringido"; /* Is the app restricted? */
 "Beta App" = "App beta"; /* Is the app a beta app? */
-"Supports iTunes File Sharing" = "Compatible con iTunes para compartir archivos"; /* Can the app share files to iTunes? */
+"Supports iTunes File Sharing" = "Compartir archivos en iTunes"; /* Can the app share files to iTunes? */
 "Launch Prohibited" = "Prohibición de lanzamiento"; /* is launching the app prohibited? */
 "Came from App Store" = "Procedente de App Store"; /* did the app come from the app store? */
-"Has Settings Bundle" = "Dispone de un paquete de ajustes";
+"Has Settings Bundle" = "Paquete de ajustes";
 
 /* Paths */
 "Bundle Path" = "Ruta del paquete";
@@ -51,7 +51,7 @@
 /* Size stuff */
 "Application (.app) Size" = "Tamaño de la aplicación";
 "Documents & Data" = "Documentos y datos";
-"Size in Group Containers" = "Tamaño en contenedores de grupo";
+"Size in Group Containers" = "Tamaño contenedor de grupo";
 
 /* Yes/No */
 "Yes" = "Sí";
