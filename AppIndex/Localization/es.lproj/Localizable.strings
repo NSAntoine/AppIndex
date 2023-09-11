@@ -96,8 +96,8 @@
 "Icon" = "Ícono";
 "File Extension(s)" = "Extensión(es) de archivo";
 
-"Can't backup app with a container URL of /var/mobile or /var/root (App likely has no container in the first place to back up), sorry" = "Can't backup app with a container URL of /var/mobile or /var/root (App likely has no container in the first place to back up), sorry";
-"If the Application Size shows up here as 'zero', this most likey means that the Application is a System one, and it may not be possible to measure accurately." = "If the Application Size shows up here as 'zero', this most likey means that the Application is a System one, and it may not be possible to measure accurately.";
+"Can't backup app with a container URL of /var/mobile or /var/root (App likely has no container in the first place to back up), sorry" = "No se puede realizar una copia de seguridad de la aplicación con una URL de contenedor de /var/mobile o /var/root (es probable que la aplicación no tenga contenedor en primer lugar para realizar la copia de seguridad), lo siento.";
+"If the Application Size shows up here as 'zero', this most likey means that the Application is a System one, and it may not be possible to measure accurately." = "Si el tamaño de la aplicación aparece aquí como 'cero', lo más probable es que se trate de una aplicación del sistema y que no sea posible medirla con precisión.";
 
 /* Advanced Info */
 "Exported Types" = "Tipos de exportación";
