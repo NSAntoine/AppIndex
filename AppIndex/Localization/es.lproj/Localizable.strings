@@ -1,0 +1,128 @@
+/* 
+  Localizable.strings
+  AppIndex
+
+  Created by Serena on 27/03/2023.
+  
+*/
+
+"Applications" = "Aplicaciones";
+"All Applications" = "Todas las aplicaciones";
+
+/* Basic App info fields */
+"Name" = "Nombre";
+"Bundle Identifier" = "Identificador del paquete";
+"Download Date" = "Fecha de descarga";
+"Type" = "Tipo";
+
+/* Info stuff */
+"SDK Version Built with" = "Versión del SDK";
+"Mininium iOS Version Required" = "Versión mínima de iOS";
+"Application Version" = "Versión de la aplicación";
+
+/* App types */
+"User" = "Usuario";
+"System" = "Sistema";
+
+/* App types (Header text) */
+"User Applications" = "Aplicaciones de usuario";
+"System Applications" = "Aplicaciones del sistema";
+"Unknown Application Type" = "Tipo de aplicación desconocido";
+
+
+"No Genre" = "Ningún género";
+
+"%d Applications" = "%d Aplicaciones"; /* number of applications, like '31 Applications' */
+
+/* Status info */
+"Deletable" = "Borrable"; /* Can the app be deleted? */
+"Containerized" = "Contenedor"; /* Is the app containerized? */
+"Restricted" = "Restringido"; /* Is the app restricted? */
+"Beta App" = "App beta"; /* Is the app a beta app? */
+"Supports iTunes File Sharing" = "Compartir archivos en iTunes"; /* Can the app share files to iTunes? */
+"Launch Prohibited" = "Prohibición de lanzamiento"; /* is launching the app prohibited? */
+"Came from App Store" = "Procedente de App Store"; /* did the app come from the app store? */
+"Has Settings Bundle" = "Paquete de ajustes";
+
+/* Paths */
+"Bundle Path" = "Ruta del paquete";
+"Container Path" = "Ruta de contenedores";
+
+/* Size stuff */
+"Application (.app) Size" = "Tamaño de la aplicación";
+"Documents & Data" = "Documentos y datos";
+"Size in Group Containers" = "Tamaño contenedor de grupo";
+
+/* Yes/No */
+"Yes" = "Sí";
+"No" = "No";
+
+"Cancel" = "Cancelar";
+"Copy" = "Copia";
+"Date Installed" = "Fecha de instalación";
+
+/* ApplicationInfoViewController sections */
+"General" = "General";
+"Status" = "Estado";
+"Size" = "Tamaño";
+"Paths" = "Rutas";
+"Store Metadata" = "Metadatos de la tienda";
+"Advanced" = "Avanzado";
+"Version" = "Versión";
+"App Groups" = "Grupos de apps";
+
+"N/A" = "N/A";
+
+/* Open Actions */
+"Open in Santander" = "Abrir en Santander";
+"Open in Filza" = "Abrir en Filza";
+"Open" = "Abrir";
+
+/* Store Metadata stuff */
+"Vendor" = "Proveedor"; /* ALSO USED FOR SORTING */
+"Genre" = "Género"; /* ALSO USED FOR SORTING */
+"Age Rating" = "Clasificación por edades";
+
+"Unknown Vendor" = "Proveedor desconocido";
+
+/* Sorting stuff */
+"Sort By..." = "Ordenar por...";
+"Type" = "Tipo"; /* Sort by type of app */
+"None" = "Ninguno"; /* Don't sort */
+"Alphabetical Order" = "Orden alfabético";
+
+"Backups" = "Copias de seguridad";
+
+"Icon" = "Ícono";
+"File Extension(s)" = "Extensión(es) de archivo";
+
+"Can't backup app with a container URL of /var/mobile or /var/root (App likely has no container in the first place to back up), sorry" = "No se puede realizar una copia de seguridad de la aplicación con una URL de contenedor de /var/mobile o /var/root (es probable que la aplicación no tenga contenedor en primer lugar para realizar la copia de seguridad), lo siento.";
+"If the Application Size shows up here as 'zero', this most likey means that the Application is a System one, and it may not be possible to measure accurately." = "Si el tamaño de la aplicación aparece aquí como 'cero', lo más probable es que se trate de una aplicación del sistema y que no sea posible medirla con precisión.";
+
+/* Advanced Info */
+"Exported Types" = "Tipos de exportación";
+"Entitlements" = "Derechos";
+"Transport Security Exceptions" = "Excepciones de seguridad en el transporte";
+"Registered URL Schemes" = "Esquemas de URL registradas";
+"Usage Descriptions" = "Descripciones de uso";
+
+/* Actions */
+"Export as .ipa" = "Exportar como .ipa";
+"Backup" = "Respaldo";
+"Exporting..." = "Exportar...";
+
+/* Entitlements Info */
+"Key" = "Clave";
+"Value" = "Valor";
+// "Tipos" ya localizado en los campos básicos de información de la aplicación
+
+/* Types in plist */
+"String" = "Cadena";
+"Boolean" = "Booleano";
+"Integer" = "Entero";
+"Float" = "Flotante";
+"Data" = "Datos";
+"Array" = "Matriz";
+"Dictionary" = "Diccionario";
+"Date" = "Fecha";
+"Unknown Type" = "Tipo desconocido";
