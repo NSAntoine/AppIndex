@@ -89,6 +89,7 @@
 		CE7C180829D1ED89001E6A78 /* ApplicationListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationListViewController.swift; sourceTree = "<group>"; };
 		CE7C180B29D1EE9B001E6A78 /* FoundationExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoundationExtensions.swift; sourceTree = "<group>"; };
 		CE7C181529D1F008001E6A78 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		CE7C181529D1F108001E6A78 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
 		CE7C181729D1F105001E6A78 /* Application.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Application.swift; sourceTree = "<group>"; };
 		CE7C181A29D1F320001E6A78 /* LaunchServices.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LaunchServices.h; sourceTree = "<group>"; };
 		CE7C181B29D1F3A8001E6A78 /* module.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
@@ -404,6 +405,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				CE7C181529D1F008001E6A78 /* en */,
+				CE7C181529D1F108001E6A78 /* es */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";
