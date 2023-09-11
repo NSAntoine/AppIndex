@@ -1,7 +1,5 @@
 #!/bin/bash
 
-if [[ -d '/Applications/AppIndex.app' ]]; then
-     uicache -p /Applications/AppIndex.app
-elif [[ -d '/var/jb/Applications/AppIndex.app' ]]; then
+if [[ -d '/var/jb/Applications/AppIndex.app' ]]; then
      uicache -p /var/jb/Applications/AppIndex.app
 fi
